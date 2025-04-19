@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+     font-size: 10vh; /*we can also taje vw*/  
+}
+p{
+ font-size: 10vmin; /*we can also take vmax  */
+}
+#parent{
+   min-height:100%;
+    width: 100%;
+    background-color: lightblue;
+}
+#child{
+    height: 100vh;
+    width: 50vw;
+    background-color: lightcoral;
+}
+#child1{
+    height: 100vh;
+    width: 60vw;
+    background-color: lightgray;
+}
+#marquee{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    animation: marquee 10s linear infinite;
+}
+.elem h1{
+    display:inline-block;
+    
+}
+@keyframes marquee{
+    0%{
+        tensform:translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
